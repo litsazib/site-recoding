@@ -1,0 +1,196 @@
+
+.side {
+  z-index: 10;
+}
+.cursor {
+  z-index: 11;
+}
+.in {
+    position: relative;
+    height: 100%;
+}
+.in,
+.spr {
+    width: 100%;
+}
+.btn-reserve {
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  height: 10vw;
+  width: 10vw;
+  overflow: hidden;
+}
+.fl-hover:hover .fl-t {
+   -webkit-transform: translateY(-100%);
+   transform: translateY(-100%);
+}
+.fl-hover:hover {
+   -webkit-clip-path: circle(5.70667vw at 1.42667vw 50%);
+   clip-path: circle(5.70667vw at 1.42667vw 50%);
+}
+.fl-hover:hover {
+   -webkit-transform: scale(4);
+   transform: scale(4);
+}
+.side {
+ position: fixed;
+}
+
+
+.btn-reserve .in,
+.logo-icon .cl-t {
+   -webkit-transform: translateY(110%);
+   transform: translateY(110%);
+}
+.btn-menu-pivot,
+.btn-menu-txt .fl-origin,
+.btn-reserve .in,
+.logo-icon .cl-t {
+   -webkit-transition: all 1.2s cubic-bezier(0.5, 0.2, 0.1, 1.14);
+   transition: all 1.2s cubic-bezier(0.5, 0.2, 0.1, 1.14);
+}
+.btn-reserve .in,
+.logo-icon .cl-t {
+   -webkit-transform: translate(0);
+   transform: translate(0);
+}
+.site-message > .in {
+   padding: 60px 80px;
+}
+.is-any .site-message > .in {
+   padding: 2em;
+}
+.btn-menu-txt .fl-origin,
+.btn-reserve .in,
+.logo-icon .cl-t {
+  -webkit-transition: none;
+  transition: none;
+  -webkit-transform: translate(0);
+  transform: translate(0);
+}
+.btn-reserve-f {
+  height: 100%;
+  width: 100%;
+}
+.btn-reserve-f {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #fafafa;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.btn-menu-txt .fl-origin,
+.btn-reserve .in,
+.logo-icon .cl-t {
+  -webkit-transform: translateY(110%);
+  transform: translateY(110%);
+}
+.btn-menu-pivot,
+.btn-menu-txt .fl-origin,
+.btn-reserve .in,
+.logo-icon .cl-t {
+  -webkit-transition: all 1.2s cubic-bezier(0.5, 0.2, 0.1, 1.14);
+  transition: all 1.2s cubic-bezier(0.5, 0.2, 0.1, 1.14);
+}
+.btn-menu-txt .fl-origin,
+.btn-reserve .in,
+.logo-icon .cl-t {
+  -webkit-transform: translate(0);
+  transform: translate(0);
+}
+.btn-menu-txt .fl-origin,
+.btn-reserve .in,
+.logo-icon .cl-t {
+ -webkit-transition: none;
+ transition: none;
+ -webkit-transform: translate(0);
+ transform: translate(0);
+}
+.cl-origin,
+.fl-origin {
+  overflow: hidden;
+}
+.fl-origin {
+  height: 1.3em;
+  line-height: 1.3;
+}
+.cl-body,
+.cl-origin,
+.fl-body,
+.fl-origin {
+  display: block;
+  position: relative;
+}
+.cl-body,
+.cl-origin,
+.fl-body,
+.fl-origin {
+  display: block;
+  position: relative;
+}
+.cl-body .cl-t,
+.fl-body .fl-t {
+  display: block;
+  min-height: 1.3em;
+}
+.cl-body .cl-t,
+.fl-body .fl-t {
+  display: block;
+  min-height: 1.3em;
+}
+.btn-reserv-b,
+.fl-t,
+.mail-copy-body,
+.ui-btn-pivot,
+.ui-btn-t-front {
+  -webkit-transition: all 0.6s cubic-bezier(0.5, 0.2, 0.1, 1.14);
+  transition: all 0.6s cubic-bezier(0.5, 0.2, 0.1, 1.14);
+}
+.fl-hover:hover .fl-t {
+ -webkit-transform: translateY(-100%);
+ transform: translateY(-100%);
+}
+.btn-reserv-b,
+.fl-t,
+.mail-copy-body,
+.ui-btn-pivot,
+.ui-btn-t-front {
+  -webkit-transition: all 0.6s cubic-bezier(0.5, 0.2, 0.1, 1.14);
+  transition: all 0.6s cubic-bezier(0.5, 0.2, 0.1, 1.14);
+}
+.btn-reserve:hover .btn-reserv-b {
+  border-radius: 100%;
+  -webkit-transform: rotate(90deg) scale(1.6);
+  transform: rotate(90deg) scale(1.6);
+}
+.btn-reserv-b {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background: #856d47;
+  overflow: hidden;
+}
+.btn-reserv-b,
+.fl-t,
+.mail-copy-body,
+.ui-btn-pivot,
+.ui-btn-t-front {
+  -webkit-transition: all 0.6s cubic-bezier(0.5, 0.2, 0.1, 1.14);
+  transition: all 0.6s cubic-bezier(0.5, 0.2, 0.1, 1.14);
+}
+.btn-reserve:hover .btn-reserv-b {
+  border-radius: 100%;
+  -webkit-transform: rotate(90deg) scale(1.6);
+  transform: rotate(90deg) scale(1.6);
+}

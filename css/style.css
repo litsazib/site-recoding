@@ -446,6 +446,7 @@ ul {
 .section-four .main-wrap .sectionContent .headingTxt {
   position: relative;
   left: 6%;
+  z-index: 1;
 }
 .section-four .main-wrap .sectionContent .headingTxt h1 {
   font-size: 8.20333vw;
@@ -461,8 +462,82 @@ ul {
 }
 .section-four .main-wrap .sectionContent .swipeImage .imageView {
   height: 100%;
-  background-image: url('../images/facality/bg01.webp');
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  animation: swipeImage 10s ease-in-out infinite;
+}
+.section-five {
+  background: #eeede9;
+  height: 100vh;
+}
+.section-five .main-wrap {
+  position: relative;
+  padding: 40px 0;
+}
+.section-five .main-wrap .collectiveTxt {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  font-size: 1.42667vw;
+  z-index: 1;
+}
+.section-five .main-wrap .sectionContent {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+}
+.section-five .main-wrap .sectionContent .swipeImage {
+  max-width: 360px;
+  width: 100%;
+  height: 503px;
+  position: relative;
+}
+.section-five .main-wrap .sectionContent .swipeImage .bookNow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 11.77vw;
+  word-break: keep-all;
+  white-space: nowrap ;
+  line-height: 1;
+  box-sizing: border-box;
+}
+.section-five .main-wrap .sectionContent .swipeImage .bookNow:after {
+  content: '';
+  clear: both;
+  height: 5px;
+  width: 100%;
+  background: #000;
+  display: block;
+}
+.section-five .main-wrap .sectionContent .swipeImage .imageView {
+  height: 100%;
+  background-image: url('../images/home.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
+}
+@keyframes swipeImage {
+  0% {
+    background-image: url('../images/facality/bg01.webp');
+  }
+  50% {
+    background-image: url('../images/facality/bg02.webp');
+  }
+  100% {
+    background-image: url('../images/facality/bg03.webp');
+  }
+}
+@keyframes zoomEffect {
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(2, 2);
+  }
 }
 @keyframes marquee {
   0% {

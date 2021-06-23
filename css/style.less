@@ -497,6 +497,7 @@ body {
       .headingTxt {
         position: relative;
         left: 6%;
+        z-index: 1;
         h1 {
           font-size: 8.20333vw;
           word-break: ;
@@ -511,13 +512,101 @@ body {
         height: 503px;
         .imageView {
           height: 100%;
-          background-image: url('../images/facality/bg01.webp');
+          // background-image: url('../images/facality/bg01.webp');
           background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          animation: swipeImage 10s ease-in-out infinite;
+          // transition: 4s ease-in-out infinite;
+          // animation-name: swipeImage;
+          // animation-direction: alternate-reverse;
+          // animation-duration: 10s;
+          // animation-fill-mode: forwards;
+          // animation-play-state: running;
+          // animation-timing-function: ease-in-out;
+          
+          // animation: zoomout 10s ease-in infinite;
+          
+          
         }
       }
     }
   }
 }
+// section 5
+.section-five {
+  background: #eeede9;
+  height: 100vh;
+  .main-wrap {
+    position: relative;
+    padding: 40px 0;
+    .collectiveTxt {
+      position: absolute;
+      top: 15%;
+      left: 10%;
+      font-size: 1.42667vw;
+      z-index: 1;
+    }
+    .sectionContent {
+      display: flex;
+      justify-content: center;
+      width: 70%;
+      margin: 0 auto;
+      .swipeImage {
+        max-width: 360px;
+        width: 100%;
+        height: 503px;
+        position: relative;
+        .bookNow {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 11.77vw;
+          word-break: keep-all;
+          white-space: nowrap ;
+          line-height: 1;
+          box-sizing: border-box;
+          &:after {
+            content: '';
+            clear: both;
+            height: 5px;
+            width: 100%;
+            background: #000;
+            display: block;
+          }
+        }
+        .imageView {
+          height: 100%;
+          background-image: url('../images/home.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: top right;
+        }
+      }
+    }
+  }
+}
+
+
+@keyframes swipeImage {
+  0% {
+    background-image: url('../images/facality/bg01.webp');  
+  }
+  50% {
+    background-image: url('../images/facality/bg02.webp');  
+  }
+  100% {
+    background-image: url('../images/facality/bg03.webp');  
+  }
+}
+
+// animation: 50s ease 0s normal none infinite running zoomEffect;
+@keyframes zoomEffect {
+  from {transform: scale(1, 1)}
+  to {transform: scale(2, 2)}
+}
+
 
 
 

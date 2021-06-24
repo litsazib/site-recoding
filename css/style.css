@@ -520,6 +520,42 @@ ul {
   background-size: cover;
   background-position: top right;
 }
+.section-five .site-footer {
+  width: 90%;
+  margin: 5% auto;
+  display: flex;
+  justify-content: space-between;
+}
+.section-five .site-footer .leftPart {
+  position: relative;
+  left: 5%;
+}
+.section-five .site-footer .leftPart .inline {
+  display: flex;
+  gap: 25px;
+}
+.section-five .site-footer .leftPart .inline p {
+  font-size: 1.21267vw;
+  letter-spacing: -0.01em;
+}
+.section-five .site-footer .leftPart .inline a {
+  font-size: .856vw;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  text-decoration: underline;
+}
+.section-five .site-footer .rightPart ul li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+.section-five .site-footer .rightPart ul li span {
+  font-size: .856vw;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+.section-five .site-footer .rightPart ul li a {
+  text-decoration: underline;
+}
 @keyframes swipeImage {
   0% {
     background-image: url('../images/facality/bg01.webp');

@@ -138,7 +138,7 @@
                 <div class="in js--scroll" data-pow="1.05">
                   <div class="visual-txt-line cl-origin v__line-book-now-book-now-" data-visible="1">
                     <div class="visual-txt-head cl-t fl-origin">
-                      <span class="fl-body hvr">
+                      <span class="fl-body hvr" id="demo">
                         <span class="fl-t w__book-now">
                           Book Now 
                       </span> 
@@ -183,28 +183,21 @@
     <script>
       window.onload = function () {
         lax.init()
-      
-        // Add a driver that we use to control our animations
+    
         lax.addDriver('scrollY', function () {
           return window.scrollY
         })
       
-        // Add animation bindings to elements
         lax.addElements('.scrollX-img-section .img', {
           scrollY: {
             translateX: [["elInY", "elOutY"], [-120, "100"]],
             translateY: [["elInY", "elOutY"], [-90, "100"]]
           }
         });
-        // lax.addElements('.centerImg01', {
-        //   scrollY: {
-        //     translateX: [["elInY", "elOutY"], [-120, "100"]],
-        //     translateY: [["elInY", "elOutY"], [-90, "100"]]
-        //    }
-        // });
       }
       
     </script>
-    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/main.js"></script>  
   </body>
 </html>

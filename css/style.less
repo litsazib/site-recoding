@@ -677,9 +677,18 @@ body {
 }
 
 
+.w__book-now:hover
+ {
+  // transform: translateY(-100%);
+}
 
-
-
+.hvr {
+  &:hover {
+    .w__book-now::hover {
+      transform: translateY(-100%);
+    }
+  }
+}
 
 
 

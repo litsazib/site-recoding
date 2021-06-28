@@ -1,23 +1,6 @@
-// document.getElementById("demo").addEventListener("mouseover", mouseOver);
-// document.getElementById("demo").addEventListener("mouseout", mouseOut);
-// 
-// function mouseOver() {
-//   // document.getElementById("demo").style.color = "red";
-//   var x = document.getElementsByClassName("w__book-now");
-//   x.classList.add("mystyle");
-//   console.log('mouseOver');
-// }
-// 
-// function mouseOut() {
-//   // document.getElementById("demo").style.color = "black";
-//   var x = document.getElementsByClassName("w__book-now");
-//   x.classList.add("mouseOut");
-// }
-// 
-// 
-// console.log('asdfasdf');
 
 $(document).ready(function(){
+  pointer();
   $("#demo").mouseover(function(){
     $(".w__book-now").css("transform", "translateY(-100%)");
     console.log('over');
@@ -27,4 +10,17 @@ $(document).ready(function(){
     console.log('out');
   });
 });
+
+
+function pointer() {
+  $("body,html").mousemove(function (e) {
+    $(".cursor").css({ top: e.pageY - 10, left: e.pageX - 10 });
+  });
+  $("body,html").click(function () {
+    $(".cursor").addClass("expand");
+    setTimeout(function () {
+      $(".cursor").removeClass("expand");
+    }, 500);
+  });
+}
 

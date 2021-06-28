@@ -126,6 +126,29 @@ ul {
 .sp {
   display: none;
 }
+.cursor {
+  pointer-events: none;
+  opacity: 1 !important;
+}
+.cursor .cursor_ball {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  mix-blend-mode: #AFBDEC;
+  opacity: 1;
+}
+.cursor .cursor_ball circle {
+  fill: #1C63E4;
+}
+.cursor,
+.js--cursor-type-text .cursor-target .progress {
+  opacity: 1 !important;
+}
+.expand {
+  animation: cursorAnim3 .5s forwards;
+  border: 1px solid #ff0000;
+}
 /* ==========================================================================
    Style for pc
    ========================================================================== */

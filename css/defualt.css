@@ -1973,6 +1973,8 @@
         width: 2.85333vw;
         pointer-events: none;
         color: #fafafa;
+        border: 1px solid #000;
+        border-radius: 100%;
     }
     .cursor-body {
         border-radius: 100%;

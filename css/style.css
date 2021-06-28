@@ -149,6 +149,10 @@ ul {
   animation: cursorAnim3 .5s forwards;
   border: 1px solid #ff0000;
 }
+body {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
 /* ==========================================================================
    Style for pc
    ========================================================================== */

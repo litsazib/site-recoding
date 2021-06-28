@@ -14,7 +14,7 @@ $(document).ready(function(){
 
 function pointer() {
   $("body,html").mousemove(function (e) {
-    $(".cursor").css({ top: e.pageY - 10, left: e.pageX - 10 });
+    $(".cursor").css({ top: e.pageY - 4, left: e.pageX - 5 });
   });
   $("body,html").click(function () {
     $(".cursor").addClass("expand");

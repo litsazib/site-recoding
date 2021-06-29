@@ -1,5 +1,5 @@
 
-$(document).ready(function(){
+$(document).ready(function() {
   pointer();
   $("#demo").mouseover(function(){
     $(".w__book-now").css("transform", "translateY(-100%)");
@@ -23,4 +23,26 @@ function pointer() {
     }, 500);
   });
 }
+
+document.addEventListener("click", function() {
+  document.getElementById("demo").innerHTML = "Hello World";
+});
+
+window.addEventListener("scroll", function(e) {
+  const target = document.querySelector('.scroll');
+  const target1 = document.querySelector('.scroll1');
+  // const imageView = document.querySelector('.anims');
+  var scrolled = window.pageYOffset;
+  var rate = scrolled * -0.500;
+  var rate1 = scrolled * -0.500;
+  var imageViewRate = scrolled * -0.500;
+  
+  target.style.transform = 'translate3d(0px,'+rate+'px,0px)';
+  target1.style.transform = 'translate3d(-50%,'+rate1+'px,0px)';
+  imageView.style.transform = 'translate(0px'+imageViewRate+'px)';
+});
+
+
+
+
 

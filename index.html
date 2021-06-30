@@ -154,7 +154,7 @@
                 </div>
                 </div>
               </div>
-              <div class="imageView"></div>
+              <div class="imageView bookNowImg"></div>
             </div>
           </div>
         </div>
@@ -182,56 +182,83 @@
     <script src="js/main.js"></script>  
     <script>
     
-    
     let tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".fv-section",
-        // start:"center center",
-        // end:"bottom top",
-        // markers:true,
-        // pin:true
       }
     });
     
     let tl2 = gsap.timeline({
       scrollTrigger: {
-        trigger: ".section-four",
-        start:"top center",
+        trigger: ".section-four .sectionContent",
+        start:"40% center",
         scrub:true,
-        // end:"bottom top",
         markers:true
-        // pin:true
       }
     })
     
     tl.from(".logo-svg",{y:200,opacity:0,duration:1},"-=1")
+    tl2.to(".FacilitiesImage",{y:-150})
     
-    tl2.to(".FacilitiesImage",{y:-200})
-    
-    // .to(".redCar img",{x:1150})
-    // .to(".text",{scale:0})
-    
-    
+    gsap.to(".bookNowImg",{
+      y: -150,
+      scrollTrigger: {
+        trigger: ".section-five .sectionContent",
+        start:"top center",
+        end: "bottom -50%",
+        scrub:true,
+        markers:true
+      }
+    })
+    gsap.to(".scrollX-img-section .img",{
+      x: -150,
+      y: -150,
+      scrollTrigger: {
+        trigger: ".scrollX-img-section .img",
+        start:"top center",
+        end: "bottom -40%",
+        scrub:true,
+        markers:true
+      }
+    })
+    gsap.to(".scroll",{
+      y: -100,
+      scrollTrigger: {
+        trigger: ".scroll",
+        start:"50% 50%",
+        scrub:true,
+        markers:true
+      }
+    })
+    gsap.to(".scroll1",{
+      y: -150,
+      scrollTrigger: {
+        trigger: ".section-two",
+        start:"top center",
+        scrub:true,
+        markers:true
+      }
+    })
     
     
     
 
     
     
-      window.onload = function () {
-        lax.init()
-    
-        lax.addDriver('scrollY', function () {
-          return window.scrollY
-        })
-      
-        lax.addElements('.scrollX-img-section .img', {
-          scrollY: {
-            translateX: [["elInY", "elOutY"], [-120, "100"]],
-            translateY: [["elInY", "elOutY"], [-90, "100"]]
-          }
-        });
-      }
+      // window.onload = function () {
+      //   lax.init()
+      // 
+      //   lax.addDriver('scrollY', function () {
+      //     return window.scrollY
+      //   })
+      // 
+      //   lax.addElements('.scrollX-img-section .img', {
+      //     scrollY: {
+      //       translateX: [["elInY", "elOutY"], [-120, "100"]],
+      //       translateY: [["elInY", "elOutY"], [-90, "100"]]
+      //     }
+      //   });
+      // }
       
     </script>
   </body>

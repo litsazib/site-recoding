@@ -39,7 +39,7 @@ window.addEventListener("scroll", function(e) {
   
   target.style.transform = 'translate3d(0px,'+rate+'px,0px)';
   target1.style.transform = 'translate3d(-50%,'+rate1+'px,0px)';
-  imageView.style.transform = 'translate(0px'+imageViewRate+'px)';
+  // imageView.style.transform = 'translate(0px'+imageViewRate+'px)';
 });
 
 

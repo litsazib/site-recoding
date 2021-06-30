@@ -124,7 +124,7 @@
                 Gallery</h1>
             </div>
             <div class="swipeImage">
-              <div class="imageView"></div>
+              <div class="imageView FacilitiesImage"></div>
             </div>
           </div>
         </div>
@@ -177,8 +177,47 @@
     </div>
     <script src="js/lax.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
     <script src="js/main.js"></script>  
     <script>
+    
+    
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".fv-section",
+        // start:"center center",
+        // end:"bottom top",
+        // markers:true,
+        // pin:true
+      }
+    });
+    
+    let tl2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".section-four",
+        start:"top center",
+        scrub:true,
+        // end:"bottom top",
+        markers:true
+        // pin:true
+      }
+    })
+    
+    tl.from(".logo-svg",{y:200,opacity:0,duration:1},"-=1")
+    
+    tl2.to(".FacilitiesImage",{y:-200})
+    
+    // .to(".redCar img",{x:1150})
+    // .to(".text",{scale:0})
+    
+    
+    
+    
+    
+
+    
+    
       window.onload = function () {
         lax.init()
     

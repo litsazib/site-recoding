@@ -746,24 +746,6 @@ body {
   to {transform: scale(2, 2)}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @keyframes marquee {
   0% {
       -webkit-transform: translate(0);
@@ -782,7 +764,51 @@ body {
   transform: translate(-50%, -50%);
 }
 
+// PreLoader Animation 
+.pre-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  .layer-01 {
+    background: #fff;
+    height: 100%;
+    z-index: 999;
+    text-align: center;
+    .countdownBody {
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: 50%;
+      position: relative;
+      &:before {
+        content: "100";
+        clear: both;
+        display: block;
+        font-size: 15em;
+        margin-bottom: 0%;
+        animation: countdownNumber 1.5s ease-in-out;
+      }
+      span {
+        font-size: 1.5em;
+      }
+    }
+  }
+}
 
+
+@keyframes countdownNumber {
+  0% {
+    content: "0";
+  }
+  66% {
+    content: "66";
+  }
+  100% {
+    content: "100"; 
+  }
+}
 
 /* ==========================================================================
    style for smartphone max-width:768px

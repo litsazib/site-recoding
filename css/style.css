@@ -635,8 +635,13 @@ body {
 .pre-loader .layer-01 {
   background: #fff;
   height: 100%;
-  z-index: 999;
   text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  display: none;
 }
 .pre-loader .layer-01 .countdownBody {
   transform: translate(-50%, -50%);
@@ -655,6 +660,19 @@ body {
 .pre-loader .layer-01 .countdownBody span {
   font-size: 1.5em;
 }
+.pre-loader .layer-02 {
+  background-image: url(../images/home.jpg);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.pre-loader .zommOut {
+  animation: zommOut 1.5s ease-in-out;
+}
 @keyframes countdownNumber {
   0% {
     content: "0";
@@ -664,6 +682,22 @@ body {
   }
   100% {
     content: "100";
+  }
+}
+@keyframes slideOut {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -100vh;
+  }
+}
+@keyframes zommOut {
+  to {
+    transform: scale(1.5);
+  }
+  form {
+    transform: scale(1);
   }
 }
 /* ==========================================================================

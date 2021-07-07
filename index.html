@@ -13,13 +13,11 @@
     <div class="_app">
       <div class="pre-loader">
         <div class="layer-01 countdown">
-          <div class="countdownBody" data-before-content="007">
+          <div class="countdownBody">
             <span>DDD HOTEL</span>
           </div>
         </div>
-        <div class="layer-02 zommOut">
-          
-        </div>
+        <div class="layer-02 zommOut"></div>
       </div>
       <header class="site-header">
           <a href="#" class="btn-reserve fl-hover side">
@@ -199,13 +197,12 @@
       duration:1.2,
       delay:3,
     },"-=1")
-    gsap.from('.zommOut', 10, { scale:1.5, duration:1, ease: Power2.easeOut });
-    // gsap.from('.zommOut', { 
-    //   backgroundSize: "+=25% +=25%", 
-    // });
     
-    gsap.to('.layer-02',{y: -1000,duration:1,delay:5});
+    gsap.from('.zommOut', 5, { scale:1.8, duration:1.5, ease: Power2.easeOut });
+    
+    gsap.to('.layer-02',{y: -1000,duration:1.5,delay:5});
     gsap.from(".logo-svg",{y:200,opacity:0,duration:1,delay:5.5},)
+    gsap.to(".pre-loader", { display:"none",delay:5.6 });  //Hide Pre-loader 
     
     let tl2 = gsap.timeline({
       scrollTrigger: {

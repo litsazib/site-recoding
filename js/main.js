@@ -17,36 +17,50 @@ function changeNavBG() {
   
   $('._home').mouseover(function(event) {
   $('.overlay_bg').css('backgroundImage','url(images/menu_bg/home.jpg)')
+  $('.bg-view').css('backgroundImage','url(images/menu_bg/home.jpg)')
+    $('.overlay_bg').addClass('bg_animation');
   });
   
   $('._concept').mouseover(function(event) {
   $('.overlay_bg').css('backgroundImage','url(images/menu_bg/concept.jpg)')
+  $('.bg-view').css('backgroundImage','url(images/menu_bg/concept.jpg)')
+  $('.overlay_bg').addClass('bg_animation');
   });
   
   $('._rooms').mouseover(function(event) {
   $('.overlay_bg').css('backgroundImage','url(images/menu_bg/rooms.jpg)')
+  $('.bg-view').css('backgroundImage','url(images/menu_bg/rooms.jpg)')
+  $('.overlay_bg').addClass('bg_animation');
   });
   
   $('._access').mouseover(function(event) {
   $('.overlay_bg').css('backgroundImage','url(images/menu_bg/access.jpg)')
+  $('.bg-view').css('backgroundImage','url(images/menu_bg/access.jpg)')
+  $('.overlay_bg').addClass('bg_animation');
   });
   
   $('._cafe').mouseover(function(event) {
   $('.overlay_bg').css('backgroundImage','url(images/menu_bg/cafe.jpg)')
+  $('.bg-view').css('backgroundImage','url(images/menu_bg/cafe.jpg)')
+  $('.overlay_bg').addClass('bg_animation');
   });
   
   $('._gallery').mouseover(function(event) {
   $('.overlay_bg').css('backgroundImage','url(images/menu_bg/gallery.jpg)')
+  $('.bg-view').css('backgroundImage','url(images/menu_bg/gallery.jpg)')
+  $('.overlay_bg').addClass('bg_animation');
   });
   
   $('._kitchen').mouseover(function(event) {
   $('.overlay_bg').css('backgroundImage','url(images/menu_bg/kitchen.jpg)')
+  $('.bg-view').css('backgroundImage','url(images/menu_bg/kitchen.jpg)')
+  $('.overlay_bg').addClass('bg_animation');
   });
-  
-
   
   $('._dar').mouseover(function(event) {
   $('.overlay_bg').css('backgroundImage','url(images/menu_bg/dar.jpg)')
+  $('.bg-view').css('backgroundImage','url(images/menu_bg/dar.jpg)')
+  $(this).addClass('bg_animation');
   });
 
 }

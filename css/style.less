@@ -252,6 +252,7 @@ body {
   position: fixed;
   width: 100vw;
   z-index: 999;
+  
   .overlay_bg {
     background-image: url(../images/menu_bg/home.jpg);
     background-repeat: no-repeat;
@@ -264,28 +265,11 @@ body {
     width: 100%;
     z-index: -1;
     filter: brightness(0.5);
+  }
+
+  .bg_animation {
     animation: zommOutBG 3s infinite;
   }
-  // .home{
-  //   background-image: url(../images/menu_bg/home.jpg);
-  //   opacity: 1;
-  // }
-  // .concept{
-  //   background-image: url(../images/menu_bg/concept.jpg);
-  //   opacity: 0;
-  // }
-  // ._home:hover,
-  // .home {
-  //   opacity: 1;
-  // }
-  // ._concept:hover,
-  // .concept {
-  //   opacity: 1
-  // }
-  
-  
-  
-  
   
   .menuItem{
     width: 80%;
@@ -315,11 +299,26 @@ body {
     .terms,
     .privacy {
       padding: 10px;
+      color: #fff;
     }
   }
 }
   
-  
+.bg-view {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 0;
+  width: 50vh;
+  height: 80vh;
+  transition: all 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  display: block;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
   
   
   

@@ -177,6 +177,8 @@ body {
   width: 100%;
   z-index: -1;
   filter: brightness(0.5);
+}
+.NavMenuWraper .bg_animation {
   animation: zommOutBG 3s infinite;
 }
 .NavMenuWraper .menuItem {
@@ -206,6 +208,22 @@ body {
 .NavMenuWraper .bottomLink .terms,
 .NavMenuWraper .bottomLink .privacy {
   padding: 10px;
+  color: #fff;
+}
+.bg-view {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 0;
+  width: 50vh;
+  height: 80vh;
+  transition: all 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  display: block;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
 .fv-section .scrollCircle {
   position: absolute;

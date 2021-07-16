@@ -255,7 +255,7 @@ body {
   .overlay_bg {
     background-image: url(../images/menu_bg/home.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 110% 110%;
     position: absolute;
     top: 0;
     left: 0;
@@ -264,7 +264,29 @@ body {
     width: 100%;
     z-index: -1;
     filter: brightness(0.5);
+    animation: zommOutBG 3s infinite;
   }
+  // .home{
+  //   background-image: url(../images/menu_bg/home.jpg);
+  //   opacity: 1;
+  // }
+  // .concept{
+  //   background-image: url(../images/menu_bg/concept.jpg);
+  //   opacity: 0;
+  // }
+  // ._home:hover,
+  // .home {
+  //   opacity: 1;
+  // }
+  // ._concept:hover,
+  // .concept {
+  //   opacity: 1
+  // }
+  
+  
+  
+  
+  
   .menuItem{
     width: 80%;
     margin: 27vh auto 0;
@@ -277,9 +299,6 @@ body {
           font-size: 5.27867vw;
           letter-spacing: -.01em;
           color: #fff;
-          &:hover {
-          
-          }
         }
         .selectItem {
           opacity: 0.1;
@@ -913,6 +932,14 @@ body {
   }
   form {
     transform: scale(1);
+  }
+}
+@keyframes zommOutBG {
+  0% {
+    background-size: 110% 110%;
+  }
+  100% {
+    background-size: 100% 100%;
   }
 }
 

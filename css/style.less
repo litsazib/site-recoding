@@ -246,10 +246,78 @@ body {
   /* -- Page
    * By:@RoktimSazib
   */
-  // 
-  // .circleBall:hover {
-  //   transform: scale(4);
-  // }
+
+.NavMenuWraper {
+  height: 100%;
+  position: fixed;
+  width: 100vw;
+  z-index: 999;
+  .overlay_bg {
+    background-image: url(../images/menu_bg/home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    filter: brightness(0.5);
+  }
+  .menuItem{
+    width: 80%;
+    margin: 27vh auto 0;
+    text-align: center;
+    ul {
+      li {
+        display: inline-flex;
+        padding: 0px 3%;
+        a {
+          font-size: 5.27867vw;
+          letter-spacing: -.01em;
+          color: #fff;
+          &:hover {
+          
+          }
+        }
+        .selectItem {
+          opacity: 0.1;
+        }
+      }
+    }
+  }
+  .bottomLink {
+    width: 53%;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    .terms,
+    .privacy {
+      padding: 10px;
+    }
+  }
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
 .fv-section {
   .scrollCircle {

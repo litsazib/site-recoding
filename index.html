@@ -29,7 +29,6 @@
               <div class="lang-en lang-a">
                 <a href="/en" class="nuxt-link-exact-active nuxt-link-active"><span class="cl-t">en</span></a>
               </div> 
-              <!-- <div class="lang-ja lang-a"><a href="/" class="cl-origin nuxt-link-active"><span class="cl-t">ja</span></a></div> -->
             </div>
         </div>
         
@@ -37,7 +36,7 @@
           <div class="btn-menu-in c-pivot-origin">
             <div class="c-pivot"></div> 
             <div class="btn-menu-txt"><span class="fl-a fl-origin">
-              <span class="fl-body"><span class="fl-t" style="color:#fff">Close</span> 
+              <span class="fl-body"><span class="fl-t" style="color:#fff" id="closeBtn">Close</span> 
               <span class="fl-t">Close menu</span>
               </span></span>
             </div>
@@ -82,14 +81,14 @@
     
     <div class="cursor"></div>
     <div class="_app">
-      <!-- <div class="pre-loader">
+      <div class="pre-loader">
         <div class="layer-01 countdown">
           <div class="countdownBody">
             <span>DDD HOTEL</span>
           </div>
         </div>
         <div class="layer-02 zommOut"></div>
-      </div> -->
+      </div>
       <header class="site-header">
           <a href="#" class="btn-reserve fl-hover side">
             <div class="in">
@@ -115,7 +114,7 @@
           <div class="btn-menu-in c-pivot-origin">
             <div class="c-pivot"></div> 
             <div class="btn-menu-txt"><span class="fl-a fl-origin">
-              <span class="fl-body"><span class="fl-t">menu</span> 
+              <span class="fl-body"><span class="fl-t" id="menuOpenBtn">menu</span> 
               <span class="fl-t">Close menu</span>
               </span></span>
             </div>
@@ -279,8 +278,8 @@
       scrollTrigger: {
         trigger: ".section-four .sectionContent",
         start:"40% center",
-        scrub:true,
-        markers:true
+        scrub:true
+        // markers:true
       }
     })
     
@@ -293,8 +292,8 @@
         trigger: ".section-five .sectionContent",
         start:"top center",
         end: "bottom -50%",
-        scrub:true,
-        markers:true
+        scrub:true
+        // markers:true
       }
     })
     gsap.to(".scrollX-img-section .img",{
@@ -304,8 +303,8 @@
         trigger: ".scrollX-img-section .img",
         start:"top center",
         end: "bottom -40%",
-        scrub:true,
-        markers:true
+        scrub:true
+        // markers:true
       }
     })
     gsap.to(".scroll",{
@@ -313,8 +312,8 @@
       scrollTrigger: {
         trigger: ".scroll",
         start:"50% 50%",
-        scrub:true,
-        markers:true
+        scrub:true
+        // markers:true
       }
     })
     gsap.to(".scroll1",{
@@ -322,8 +321,8 @@
       scrollTrigger: {
         trigger: ".section-two",
         start:"top center",
-        scrub:true,
-        markers:true
+        scrub:true
+        // markers:true
       }
     })
     

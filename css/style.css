@@ -164,6 +164,7 @@ body {
   position: fixed;
   width: 100vw;
   z-index: 999;
+  display: none;
 }
 .NavMenuWraper .overlay_bg {
   background-image: url(../images/menu_bg/home.jpg);
@@ -179,7 +180,8 @@ body {
   filter: brightness(0.5);
 }
 .NavMenuWraper .bg_animation {
-  animation: zommOutBG 3s infinite;
+  animation: zommOutBG 3s;
+  animation-iteration-count: 1;
 }
 .NavMenuWraper .menuItem {
   width: 80%;

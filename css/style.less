@@ -252,6 +252,7 @@ body {
   position: fixed;
   width: 100vw;
   z-index: 999;
+  display: none;
   
   .overlay_bg {
     background-image: url(../images/menu_bg/home.jpg);
@@ -268,7 +269,8 @@ body {
   }
 
   .bg_animation {
-    animation: zommOutBG 3s infinite;
+    animation: zommOutBG 3s;
+    animation-iteration-count: 1; 
   }
   
   .menuItem{
